@@ -5,10 +5,7 @@
 node_modules
 
 // STATIC FILES
-public/bundle.js
-public/bundle.js.map
-public/styles.css
-public/styles.css.map
+public/dist
 
 // LOCK FILES
 package-lock.json
