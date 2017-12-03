@@ -13,15 +13,78 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-database.ref().on('value', snapshot => {
-    const val = snapshot.val();
-    const message = `${val.name} is a ${val.job.title} at ${val.job.company}.`;
-    console.log(message);
-});
+export {firebase, database as default};
 
-database.ref().update({
-    name: 'Mike'
-});
+
+
+
+// database.ref('expenses').on('child_removed', snapshot => {
+//     console.log(snapshot.key, snapshot.val());
+// });
+//
+// database.ref('expenses').on('child_changed', snapshot => {
+//     console.log(snapshot.key, snapshot.val());
+// });
+//
+// database.ref('expenses').on('child_added', snapshot => {
+//     console.log(snapshot.key, snapshot.val());
+// });
+
+// database.ref('expenses')
+//     .once('value')
+//     .then(snapshot => {
+//         const expenses = [];
+//
+//         snapshot.forEach(childSnapshot => {
+//             expenses.push({
+//                 id: childSnapshot.key,
+//                 ...childSnapshot.val()
+//             });
+//         });
+//
+//         console.log(expenses);
+//     });
+
+// database.ref('expenses').on('value', snapshot => {
+//     const expenses = [];
+//
+//     snapshot.forEach(childSnapshot => {
+//         expenses.push({
+//             id: childSnapshot.key,
+//             ...childSnapshot.val()
+//         });
+//     });
+//
+//     console.log(expenses);
+// });
+
+// database.ref('expenses').push({
+//     description: 'Credit Card',
+//     note: '',
+//     amount: 4500,
+//     createdAt: -54465168
+// });
+
+
+
+
+
+// database.ref('notes/-L-LJc4Lv9A_0ggLHePE').remove();
+
+// database.ref('notes').push({
+//     title: 'Course Topics',
+//     body: 'React Native, Angular, Python'
+// });
+
+// database.ref().on('value', snapshot => {
+//     const val = snapshot.val();
+//     const message = `${val.name} is a ${val.job.title} at ${val.job.company}.`;
+//     console.log(message);
+// });
+//
+// database.ref().update({
+//     name: 'Mike'
+// });
 
 // database.ref('location/city')
 //     .once('value')
