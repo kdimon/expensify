@@ -9,3 +9,7 @@ public/dist
 
 // LOCK FILES
 package-lock.json
+
+// ENV
+.env.development
+.env.test
