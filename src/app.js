@@ -4,6 +4,7 @@ import {Provider} from 'react-redux';
 import {firebase} from './firebase/firebase';
 import 'react-dates/initialize';
 import AppRouter, {history} from './routers/AppRouter';
+import LoadingPage from './components/LoadingPage';
 import configureStore from './store/configureStore';
 import {login, logout} from "./actions/auth";
 import {startSetExpenses} from "./actions/expenses";
@@ -26,7 +27,7 @@ const renderApp = () => {
     }
 };
 
-ReactDOM.render(<p>Loading...</p>, appRoot);
+ReactDOM.render(<LoadingPage />, appRoot);
 
 firebase.auth().onAuthStateChanged(user => {
     if(user) {

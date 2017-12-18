@@ -1,0 +1,14 @@
+@media screen and (min-width: 320px) and (max-width: 367px),
+       screen and (min-width: 720px) and (max-width: 747px) {
+    .DateInput {
+        width: 113px !important;
+
+        &_input {
+            padding-right: 0 !important;
+        }
+    }
+
+    .DateRangePickerInput_clearDates {
+        margin: 0 !important;
+    }
+}

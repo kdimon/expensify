@@ -1,0 +1,25 @@
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: $m-size;
+
+    &__item {
+        margin-bottom: $s-size;
+    }
+}
+
+@media screen and (min-width: $desktop-breakpoint){
+    .input-group {
+        flex-direction: row;
+        margin-bottom: $l-size;
+
+        &__item {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-right: $s-size;
+            }
+        }
+    }
+}
