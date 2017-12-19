@@ -17,4 +17,22 @@
     &--secondary {
         background-color: $light-grey__button;
     }
+
+    &--login {
+        align-items: center;
+        background-color: lighten($blue, 1);
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: $s-size;
+        }
+
+        .social-icon {
+            height: 24px;
+            width: 24px;
+        }
+    }
 }
