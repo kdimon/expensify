@@ -16,9 +16,48 @@ exports[`should correctly render LoginPage 1`] = `
       It's time to get your expenses under control.
     </p>
     <button
-      className="button"
+      className="button button--login button--login__google"
+      id="google"
+      onClick={[Function]}
     >
-      Login with Google
+      Log in with Google 
+      <img
+        className="social-icon"
+        src="/images/icons/gmail.svg"
+      />
+    </button>
+    <button
+      className="button button--login button--login__facebook"
+      id="facebook"
+      onClick={[Function]}
+    >
+      Log in with Facebook 
+      <img
+        className="social-icon"
+        src="/images/icons/facebook.svg"
+      />
+    </button>
+    <button
+      className="button button--login button--login__github"
+      id="github"
+      onClick={[Function]}
+    >
+      Log in with GitHub 
+      <img
+        className="social-icon"
+        src="/images/icons/github.svg"
+      />
+    </button>
+    <button
+      className="button button--login button--login__twitter"
+      id="twitter"
+      onClick={[Function]}
+    >
+      Log in with Twitter 
+      <img
+        className="social-icon"
+        src="/images/icons/twitter.svg"
+      />
     </button>
   </div>
 </div>
